@@ -14,6 +14,12 @@ export class VatCategoriesService {
 
   public getVat(category: VatCategory): number {
     // REPLACE the next line with the necessary code
+    switch(category){
+      case 0: 
+      return 20;
+      case 1: 
+      return 10;
+    }
     return NaN;
   }
 }
